@@ -1,5 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    background-color: red;
+    background-image: url('../img/page-bg.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a.active{
+    font-weight: bold;
 }

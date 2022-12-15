@@ -17,3 +17,12 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('/products', function () {
+    $products = config('molisana.pasta');
+   //dd(compact('products'));
+    return view('products', compact('products'));
+})->name('products');
